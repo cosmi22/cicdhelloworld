@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('Prod') {
+        stage('Stage') {
             steps {
-                echo 'this is Production. Comment line from jenkinsfile.'
+                echo 'this is Stage. Comment line from jenkinsfile.'
             }
         }
     }
