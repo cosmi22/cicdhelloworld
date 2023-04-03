@@ -1,10 +1,24 @@
 pipeline {
     agent any
-
     stages {
-        stage('Hello') {
+        stage('Dev') {
             steps {
-                jiraComment body: 'This comment was sent from Jenkins pipeline', issueKey: 'TES-7'
+                echo 'this is DEV'
+            }
+        }
+        stage('QA') {
+            steps {
+                echo 'this is QA'
+            }
+        }
+        stage('Stage') {
+            steps {
+                echo 'this is Stage'
+            }
+        }
+        stage('Production') {
+            steps {
+                echo 'this is Prod'
             }
         }
     }
