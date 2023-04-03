@@ -1,22 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage('Dev') {
+        stage('Dev2') {
             steps {
                 echo 'this is DEV'
             }
         }
-        stage('QA') {
+        stage('QA2') {
             steps {
                 echo 'this is QA'
             }
         }
-        stage('Stage') {
+        stage('Stage2') {
             steps {
                 echo 'this is Stage'
             }
         }
-        stage('Production') {
+        stage('Production2') {
             steps {
                 echo 'this is Prod'
             }
